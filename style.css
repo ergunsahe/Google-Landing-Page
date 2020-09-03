@@ -7,6 +7,7 @@
     display: inline-block;
     padding: 20px;
 }
+
 .container1 a {
     padding-right: 10px;
 }
@@ -17,15 +18,19 @@
     padding: 7px;
     background-color: #4285F4;
     display: inline;
-    /* width: 30px; */
-    margin-left: 15px;
-    
+    margin-left: 40px; 
 } 
-span {
-    color: white;
-    font-size: 15px;
+
+#subcontainer:hover {
+    box-shadow: 0px 0px 1px 1px #4285F4;
+}
+
+#span {
+    color:rgb(255, 255, 255);
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;   
 }
 
 .container2 {
@@ -35,45 +40,55 @@ span {
     display: inline-block;
    
 }
+
 .container2 a {
     padding-right: 20px;
 }
+
 #images {
     padding-right: 45px;
 }
+
 #app-image {
     display: inline-block;
-    padding-right: 10px;
     position: fixed;
     top: 15px;
     right: 120px;
-    padding-left: 15px;  
+    padding-left: 15px; 
+    opacity: 0.5; 
 }
 
 .search-area {
     display: block;
     position: fixed;
-    top: 30%;
-    left: 32%;
+    top: 28%;
+    left: 33%;
 }
 
 #google-image {
     display: block;
-    padding-left:100px;
-    
-    
+    padding-left:100px;  
 }
+
 #search {
-   
     width: 500px;
     height: 45px;
     box-shadow:  0px 0px 2px 2px rgb(238, 235, 235);
-    background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;    
     margin-top: 30px;
-
+    padding-left: 30px;
 }
+
+#search:hover {
+    box-shadow:  0px 4px 2px 2px rgb(238, 235, 235);
+    border: x;
+}
+
+*:focus {
+    outline: none;
+}
+
 #microphone {
     display: inline-block;
     position: absolute;
@@ -91,9 +106,9 @@ span {
     left: 13px;
     width: 15px;
     height: 15px;
-    opacity: 0.7;
-    
+    opacity: 0.7;   
 }
+
 #search-box {
     position: absolute;
     margin-top: 30px;
@@ -109,6 +124,13 @@ span {
     opacity: 0.7;
 }
 
+#search-box:hover {
+    border: 0.1px solid rgba(90, 88, 88, 0.3);
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+}
+
 #feeling {
     position: absolute;
     margin-top: 30px;
@@ -121,8 +143,14 @@ span {
     font-size: 13px;
     text-align: center;
     padding-top: 10px;
-    opacity: 0.7;
+    opacity: 0.7;   
+}
 
+#feeling:hover {
+    border: 0.1px solid rgba(90, 88, 88, 0.3);
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
 }
 
 #other-language {
@@ -133,18 +161,19 @@ span {
     height: 28px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding-top: 10px;
-    
+    padding-top: 10px;  
 }
 
 .location {
     display: inline-block;
     border: 0px solid;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
     position: fixed;
-    bottom: 50px;
+    bottom: 46.3px;
     background-color:rgba(131, 125, 125, 0.1); ;
     height: 40px;
     width: 52cm;
+    
 }
 
 #country {
@@ -157,17 +186,19 @@ span {
 .footer-left {
     display: inline-block;
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     padding: 11px;
     background-color:rgba(131, 125, 125, 0.1);
     width: 52cm;
 }
+
 #advertising {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     opacity: 0.7;
     padding-right: 10px;
 }
+
 #business {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -206,4 +237,20 @@ span {
     font-size: 13px;
     opacity: 0.7; 
     padding-left: 10px;
+}
+
+.container1 a, .container2 a, .footer a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+  }
+
+.container1 a:hover, .container2 a:hover, .footer a:hover {
+    text-decoration: underline;
+    
+}
+
+
+#app-image:hover {
+    opacity: 1;
 }
